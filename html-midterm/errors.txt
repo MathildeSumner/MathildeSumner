@@ -1,0 +1,50 @@
+Group members: Mathilde Sumner, Parker Allen, Samantha Goldin
+
+find errors 1
+line 1, was missing DOCTYPE, should look like <!DOCTYPE html>
+Line 4, language was inside of the <head> when it should've been above it, underneath the  <!DOCTYPE html> line
+Line 4, “language” should be declared as “lang” not the full word. 
+line 2, didn't close the <head> tag, needs to be closed with </head>
+line 9, didn't close the <h1> tag, needs to be closed with the </h1> tag
+line 11, need to start with a <p> tag
+line 13 and 24, can’t start with a <ol> tag and end with a </ul> tag, needs to end and begin with the same
+line 19, needs to start with a <li> tag and not </li> tag (which is the closing tag)
+line 26, need to close <p> tag with </p> tag
+Line 28, Missing alt= for accessibility purposes 
+Line 30, there is no reason to use the </img> tag because 1, the <img> tag is self closing and we are making a link so we shouldn’t use it, it should be closed with a </a> tag instead
+Line 31, Incorrect name for img image.jpg 
+Line 32, Missing closing </table> tag
+Line 39, needs a </td> not <td> tag
+Line 46, the images file path in the <img> tag should be src not source
+line 48, missing <s> opening tag 
+Line 48, Missing </s> closing tag
+Line 50, <p tag should be written as <p>
+Line 54, the comment needs to be ended with -- >
+Line 56, need to close with a </a> tag
+Line 56, since there is nothing after the # it won't link to anything 
+Line 58, the sentence says its underlined text but the <em> tag makes text italicized, they should use <u> and </u> tags instead. need to switch the last two tags since they aren't nested correctly, should be </em> then </p>
+Line 61, since its <dl> which is a definition list, the inside tag should be <dt> and </dt> for a title
+Line 62, since its <dl> which is a definition list, the inside tag should be <dd> and </dd> for text 
+Line 64, need to close <h2> tag with another </h2> tag and not a </h3> tag
+
+
+
+find errors 2
+Line 2, need to close <head> tag with a </head> tag
+After Line 1, <html lang=”en” after the <!DOCTYPE html> line
+Line 4, <h1></h1> needs to be in the <body> not the <head>
+Line 5, <body tag is missing the > at the end, should look like <body>
+Line 5, need to close <body> tag with a </body> tag
+Line 6, don’t need a <html> tag since you already did it in line 1
+Line 8, didn’t close <p> tag with a </p> tag at the end of the line of code
+Line 8, didn’t close <strong> tag with a </strong> tag (should be put right before the </p> tag)
+Line 10, should be src instead of href, needs alt= “describe the picture” for accessibility purposes
+Line 12, needs a opening <h2> tag at the beginning of the line of code
+Line 12, needs a opening <p> tag at the beginning of the line of code
+Line 12, Corrected <img> tag by adding /img/
+Line 7, need to close the <div> tag after the div is over with a </div> tag
+Line 15, Comment structure is <!-- comment –> instead of < comment >
+Line 16, </htm> should be spelled like </html> instead
+
+
+
