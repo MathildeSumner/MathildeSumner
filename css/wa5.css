@@ -50,10 +50,10 @@ html {
     height: 30px;
     line-height: 30px
 }
-p, h2{
+p, h1{
     margin: 0;
 }
-h2{
+h1{
     font-size: 20px;
     line-height: 1.5em;
     margin: 0;
