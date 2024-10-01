@@ -1,0 +1,29 @@
+p{
+    color: red !important;
+    position: sticky;
+}
+p #blue{
+    color: blue;
+}
+p.purple{
+    position: sticky;
+    color: purple;
+}
+
+div{
+    border-style: dashed;
+    border-color: red;
+    margin: 30px;
+}
+#first_div{
+    position: relative;
+    top: 60px;
+    left: 200px;
+
+}
+img{
+    position: sticky;
+}
+h1{
+    text-shadow: 1px 1px black;
+}
