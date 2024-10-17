@@ -1,12 +1,16 @@
-/*@media screen and (min-width: 480px){
+@media screen and (max-width: 800px){
     body{
         background-color: limegreen;
     }
-    p{
-        color: purple;
+    ul{
+        flex-direction: column;
+    }
+    li a{
+        width: 100vw;
     }
 
-}*/
+}
+
 body{
     margin:0;
 }
