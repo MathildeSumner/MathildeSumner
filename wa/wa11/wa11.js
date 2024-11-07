@@ -8,11 +8,11 @@ const pics = ['pic1.jpg','pic2.jpg','pic3.jpg','pic4.jpg','pic5.jpg']
 
 // Declaring the alternative text for each image file //
 const imageAltText = {
-    'pic1.jpg': 'A close up picture of a blue eye',
-    'pic2.jpg': 'A close-up of a white rock',
-    'pic3.jpg': 'A bunch of purple and white flowers',
-    'pic4.jpg': 'A photo of egyptian hieroglyphics',
-    'pic5.jpg': 'A brown, yellow, and white moth sitting on a green leaf'
+    'pic1.jpg': 'A girl dressed as supergirl',
+    'pic2.jpg': 'A corgi with his tongue sticking out',
+    'pic3.jpg': 'A girl dressed as batman and a girl dressed as a pirate',
+    'pic4.jpg': 'A group of girls dressed as the characters from the wizard of oz',
+    'pic5.jpg': 'A corgi dressed like a pumpkin'
 
   };
 
@@ -30,20 +30,23 @@ pics.forEach((pic) => {
     newImage.addEventListener('click', e => { // When you click the thumbnail
         displayedImage.src = e.target.src;
         displayedImage.alt = e.target.alt;
+
+        overlay.style.width = `${displayedImage.offsetWidth}px`;
+        overlay.style.height = `${displayedImage.offsetHeight}px`;
     });
 });
 
 // Wiring up the Darken/Lighten button //
 
-btn.addEventListener('click', e => {  
+btn.addEventListener('click', e => {
     if (e.target.getAttribute("class") === "dark") {
-      e.target.setAttribute("class", "light");
-      e.target.textContent = "Lighten";
-      overlay.style.backgroundColor = "rgb(0 0 0 / 50%)"; // Darken the overlay //
+        e.target.setAttribute("class", "light");
+        e.target.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 50%)"; // Darken the overlay
     } else {
-      e.target.setAttribute("class", "dark");
-      e.target.textContent = "Darken";
-      overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"; // Lighten the overlay //
+        e.target.setAttribute("class", "dark");
+        e.target.textContent = "Darken";
+        overlay.style.backgroundColor = "rgb(0 0 0 / 0%)"; // Lighten the overlay
     }
-  });
+});
 
