@@ -51,7 +51,20 @@ let sorted1 = sortLetters('Mathilde');
 document.getElementById('sorted1').innerHTML = "Sorted Word 1: " + sorted1;
 
 let sorted2 = sortLetters('Benjamin');
-document.getElementById('sorted2').innerHTML = "sorted word 2: " + sorted2;
+document.getElementById('sorted2').innerHTML = "Sorted Word 2: " + sorted2;
+
+function capitalizeWords(str) {
+    let capitalized = str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    return capitalized;
+}
+
+//capitalize letters function// 
+let capitalized1 = capitalizeWords('the quick brown fox');
+document.getElementById('capitalized1').innerHTML = "Capitalized Sentence 1: " + capitalized1;
+
+let capitalized2 = capitalizeWords('hello my name is tilly sumner');
+document.getElementById('capitalized2').innerHTML = "Capitalized Sentence 2: " + capitalized2;
+    
 
 
 
