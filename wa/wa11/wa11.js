@@ -21,10 +21,13 @@ pics.forEach((pic) => {
     const newImage = document.createElement('img');
     newImage.src = `/wa/wa11/images/${pic}`;
     newImage.alt = imageAltText[pic];
+    newImage.style.width = '100px';  // Set the size of thumbnails here
+    newImage.style.height = 'auto';  // Maintain aspect ratio
+
 
     thumbBar.appendChild(newImage);
 
-    newImage.addEventListener('click', e => { //when you click the photo//
+    newImage.addEventListener('click', e => { // When you click the thumbnail
         displayedImage.src = e.target.src;
         displayedImage.alt = e.target.alt;
     });
