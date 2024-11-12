@@ -1,3 +1,4 @@
+
 function getJoke() {
     fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single')
         .then(res => {
@@ -13,8 +14,13 @@ function getJoke() {
         })
         .catch(error => {
             console.error(error);
+            alert('error');
         });
 }
 
 getJoke();
 document.getElementById("joke").addEventListener("click", getJoke);
+
+function displayRes(joke) {
+    document.getElementById("jokeDisplay").innerText = joke;
+}
