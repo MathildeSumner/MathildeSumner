@@ -1,0 +1,30 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ee86b7;
+    color: #333;
+}
+
+
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#comic {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#date {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#button button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
