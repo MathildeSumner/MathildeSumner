@@ -1,3 +1,33 @@
+body{
+    background-color: #F9E577;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+}
+
+
+/* Header Styling */
+header {
+    background-color: #373F47;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#title {
+    margin: 0;
+    font-size: clamp(2em, 5vw, 5em);
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+}
+
 /* Style for the projects */
 
 #projects{
@@ -18,10 +48,11 @@
 .project{
     display:flex;
     flex-direction:row;
-    border: 1px solid black;
-    margin-top:10px;
+    margin-top:50px;
+    margin-bottom: 20px;
     padding: 15px 20px;
     border-radius: 10px;
+    background-color: #6DA6B0
 }
 
 .project img {
@@ -35,11 +66,12 @@
 /* Style for the About Me section */
 
 #about {
-    border: 2px solid black; 
     padding: 20px;
     margin: 20px auto;
     margin: 1vh 5vw;
     border-radius: 10px;
+    background-color: #6DA6B0;
+    
 }
 
 .about-container {
@@ -52,11 +84,9 @@
     width: 150px; 
     object-fit: cover; 
     border-radius: 10px;
+    
 }
 
-#title {
-    margin-top: 0; 
-}
 
 
 /*button styling*/
@@ -65,27 +95,28 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #buttons button {
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #f5a8c7;
+    background-color: #373F47;
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 10px;
     border: none; 
+    font-family: "Open Sans", sans-serif;
 }
 
 #buttons button:hover {
-    background-color: #d34d6e;
+    background-color: #262C32;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #buttons button:focus {
-    background-color: #d34d6e;
+    background-color: #F8DE4F;
 }
 
 #buttons button:active {
