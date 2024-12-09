@@ -6,10 +6,20 @@
             "category": ["DigitalDesign"],
             "subtitle": "subtitle 1",
             "collaborators": "collaborator 1",
-            "abstract": "This project explores the nostalgic essence and visual appeal of vinyl records. I combined and arranged the records and their covers in visually striking ways, highlighting their iconic designs and colors.  All the records are from my dad’s collection, and the project is an ode to his lifelong work collecting these masterpieces.",
+            "abstract": "This project explores the nostalgic essence and visual appeal of vinyl records. I combined and arranged the records and their covers in visually striking ways, highlighting their iconic designs and colors. All the records are from my dad’s collection, and the project is an ode to his lifelong work collecting these masterpieces.",
             "description": "description 1",
-            "images": ["image1", "image2", "image3"]
-  
+            "images": ["record1", "record2", "record3", "record4", "record5", "record6", "record7", "record8", "record9"],
+            "alt_text": [
+                "the title card for an art project about records, shows title 'vinyl records' with a bunch of records melded together",
+                "a checker board of black and white records",
+                "colored vinyl records put together in a circle with them being melted in the background",
+                "three stacks of records with a yellow color filter over them with a red background",
+                "two 45 boxes, one is a red and white spiral and one is white and dark blue boxes",
+                "black vinyl with different colored album covers behind them",
+                "a stack of records with a melting filter on them",
+                "a bunch of records that look like they are flying in a circle",
+                "a bunch of records on a shelf with a wind filter on them"
+            ]
         },
         {
             "name": "Landscape paintings",
@@ -17,9 +27,15 @@
             "category": ["PhysicalArt"],
             "subtitle": "subtitle 2",
             "collaborators": "collaborator 2",
-            "abstract": "abstract 2",
-            "description": "description 2",
-            "images": ["image1", "image2", "image3"]
+            "abstract": "This painting project showcases four cartoon-style landscapes, each capturing a unique natural setting. The series includes a sprawling desert, a lush forest with a cascading waterfall, a vivid beach sunset, and a tranquil beach scene. With bold colors and playful details, the paintings bring a whimsical charm to these familiar landscapes, creating a cohesive and visually engaging collection.",
+            "description": "This painting project consists of four vibrant landscapes, each illustrated in a whimsical, cartoon-inspired style. The collection includes a sprawling desert with rolling dunes and bold, warm tones, a lush forest scene with a cascading waterfall framed by rich greens and blues, a glowing beach sunset that radiates warmth with its vivid hues of orange, pink, and purple, and a serene beach scene featuring soft sands and tranquil waters. Each painting combines playful, exaggerated details with dynamic colors, capturing the essence of these diverse environments in a lighthearted yet striking way. Together, the pieces create a cohesive collection that celebrates the beauty of nature through a creative and imaginative lens.",
+            "images": ["landscape1", "landscape2", "landscape3", "landscape4"],
+            "alt_text": [
+                "a beach landscape painted in a cartoon way with a sunset behind it",
+                "a desert landscape with a sun behind it painted in a cartoon style",
+                "A beach landscape painted with blue and pink, painted in a cartoon style",
+                "a forest landscape with mountains and a waterfall, painted in a cartoon style"
+            ]
         },
         {
             "name": "Ceramics",
@@ -27,10 +43,17 @@
             "category": ["PhysicalArt"],
             "subtitle": "subtitle 3",
             "collaborators": "collaborator 3",
-            "abstract": "abstract 3",
-            "description": "description 3",
-            "images": ["image1", "image2", "image3"],
-            "published": ["true", "1"]
+            "abstract": "This ceramics project includes a set of three bowls in different sizes, a small plate with a sun in the middle, and a lidded sugar bowl, all designed with a sunset gradient in warm hues of gold, orange, and pink. A matching floral pattern adds elegance, tying the pieces together into a cohesive design. Functional yet artistic, this set is perfect for everyday use or as a beautiful display of craftsmanship.",
+            "description": "This ceramics project features a beautifully coordinated set of dishes, including three bowls of varying sizes and a lidded sugar bowl. Each piece showcases a stunning sunset gradient on the sides, transitioning through warm hues like gold, orange, and pink. Complementing the gradient is an elegant flower pattern in matching tones, adding a cohesive and artistic touch to the collection. The design balances functionality and aesthetics, making the set both practical for everyday use and a charming display of craftsmanship.",
+            "images": ["ceramics1", "ceramics2", "ceramics3", "ceramics4", "ceramics5", "ceramics6"],
+            "alt_text": [
+                "a picture of three bowls and a sugar bowl, they all have a sunset gradient on them",
+                "the inside of a bowl with a sunset gradient on the inside",
+                "the side of a bowl with a sunset gradient on the side in the shape of a flower",
+                "the side of a bowl with a sunset gradient on the side in the shape of a flower",
+                "a picture of a sugar bowl with a lid, with a sunset gradient on the side in the shape of a flower",
+                "a plate in the shape of a Hexagon, with a sun in the middle and a sunset gradient on the edges"
+            ]
         },
         {
             "name": "Colorado Symphony Website",
@@ -38,10 +61,14 @@
             "category": ["WebDesign"],
             "subtitle": "subtitle 4",
             "collaborators": "collaborator 4",
-            "abstract": "abstract 4",
+            "abstract": "This web design project for the Colorado Symphony involved redesigning their website using provided images and information. Working as part of a group, my main focus was on redesigning the contact and about pages. The goal was to create an engaging, user-friendly layout that effectively showcased the symphony's mission, events, and contact information, while reflecting the organization's artistic and professional spirit.",
             "description": "description 4",
-            "images": ["image1", "image2", "image3"],
-            "published": ["true", "1"]
+            "images": ["website1", "website2", "website3"],
+            "alt_text": [
+                "a screenshot from a website showing seasonal performances for the Colorado Symphony",
+                "a screenshot from a website showing the contact page and a picture of a girl playing the flute",
+                "a screenshot from a website of the contact/about page from the Colorado Symphony"
+            ]
         }
     ]
 }
