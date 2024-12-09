@@ -1,3 +1,5 @@
+/* Style for the projects */
+
 #projects{
     display: flex;
     flex-direction:column;
@@ -55,6 +57,7 @@
 #title {
     margin-top: 0; 
 }
+
 
 /*button styling*/
 
