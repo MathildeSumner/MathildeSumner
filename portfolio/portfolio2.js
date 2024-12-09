@@ -1,67 +1,78 @@
-let subdomain = window.location.href.slice(window.location.href.lastIndexOf("/")+1, window.location.href.lastIndexOf("."));
+let subdomain = window.location.href.slice(window.location.href.lastIndexOf("/") + 1, window.location.href.lastIndexOf("."));
 console.log(subdomain);
 
 fetch('../portfolio/portfolio.json')
-    .then(response =>{
-        return response.json();
-    }).then(projects => {
-        //console.log(projects);
-        proj = projects;
+    .then(response => response.json())
+    .then(projects => {
         findProjectInJSON(projects);
-        // parseData(projects);
-    }).catch(err =>{
-        console.log(`error ${err}`);
     })
+    .catch(err => console.log(`Error: ${err}`));
 
-function findProjectInJSON(projects){
-    for(let i=0; i<projects.projects.length; i++){
-        if(projects.projects[i].subdomain == subdomain){
+function findProjectInJSON(projects) {
+    for (let i = 0; i < projects.projects.length; i++) {
+        if (projects.projects[i].subdomain === subdomain) {
             buildPage(projects.projects[i]);
             break;
-        }else{
-            continue;
         }
     }
 }
 
-function buildPage(project){
-    console.log(project);
-    document.getElementById("project").innerHTML += `<h1>${project.name}</h1>`;
-    document.getElementById("project").innerHTML += `<h2>${project.description}</h2`;
-}
-
 function buildPage(project) {
     console.log(project);
+
+    // Add project name and description 
     document.getElementById("project").innerHTML += `<h1>${project.name}</h1>`;
     document.getElementById("project").innerHTML += `<h2>${project.description}</h2>`;
 
-    // Build the carousel dynamically using project images
-    buildCarousel(project.images, project.alt_text);
+    // Determine the folder path based on the project
+    let folderPath = getFolderPath(project);
+
+    // Build the carousel 
+    buildCarousel(project.images, project.alt_text, folderPath);
 }
 
-function buildCarousel(images, altTexts) {
+function getFolderPath(project) {
+    if (project.name.toLowerCase().includes("landscape")) {
+        return 'landscapes';
+    } else if (project.name.toLowerCase().includes("ceramic")) {
+        return 'ceramics';
+    } else if (project.name.toLowerCase().includes("website")) {
+        return 'website';
+    } else {
+        return 'records'; 
+    }
+}
+
+function buildCarousel(images, altTexts, folderPath) {
     const displayedImage = document.querySelector('.displayed-img');
     const thumbBar = document.querySelector('.thumb-bar');
-    const overlay = document.querySelector('.overlay');
 
-    // Loop through images and add them to the thumbBar
+    // Check if there are images in the array to avoid errors
+    if (!images || images.length === 0) {
+        console.log("No images available.");
+        return;  // Exit if no images are available
+    }
+
+    // Set initial displayed image
+    if (images[0]) {
+        displayedImage.src = `../portfolio/img/${folderPath}/${images[0]}.png`;
+        displayedImage.alt = altTexts ? altTexts[0] : '';
+    }
+
+    // Loop through images to add thumbnails to the thumb-bar
     images.forEach((image, index) => {
         const newImage = document.createElement('img');
-        newImage.src = `/path/to/your/images/folder/${image}.jpg`; // Assuming images are stored by filename in a folder
-        newImage.alt = altTexts[index];
-        newImage.style.width = '100px';  // Set thumbnail size
-        newImage.style.height = 'auto';  // Maintain aspect ratio
+        const imgPath = `../portfolio/img/${folderPath}/${image}.png`;  
 
-        thumbBar.appendChild(newImage);
-
-        // Add click event to change the displayed image
-        newImage.addEventListener('click', e => {
+        newImage.src = imgPath;
+        newImage.alt = altTexts ? altTexts[index] : '';
+        
+        // Add click event listener to update the displayed image
+        newImage.addEventListener('click', (e) => {
             displayedImage.src = e.target.src;
             displayedImage.alt = e.target.alt;
-
-            // Adjust overlay size based on the image
-            overlay.style.width = `${displayedImage.offsetWidth}px`;
-            overlay.style.height = `${displayedImage.offsetHeight}px`;
         });
+
+        thumbBar.appendChild(newImage);
     });
 }
