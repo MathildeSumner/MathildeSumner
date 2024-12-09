@@ -1,0 +1,47 @@
+{
+    "projects": [
+        {
+            "name": "name 1",
+            "subdomain": "Records",
+            "category": ["WebDesign"],
+            "subtitle": "subtitle 1",
+            "collaborators": "collaborator 1",
+            "abstract": "abstract 1",
+            "description": "description 1",
+            "images": ["image1", "image2", "image3"]
+  
+        },
+        {
+            "name": "name 2",
+            "subdomain": "Landscape_paintings",
+            "category": ["WebDesign"],
+            "subtitle": "subtitle 2",
+            "collaborators": "collaborator 2",
+            "abstract": "abstract 2",
+            "description": "description 2",
+            "images": ["image1", "image2", "image3"]
+        },
+        {
+            "name": "name 3",
+            "subdomain": "project3",
+            "category": ["painting"],
+            "subtitle": "subtitle 3",
+            "collaborators": "collaborator 3",
+            "abstract": "abstract 3",
+            "description": "description 3",
+            "images": ["image1", "image2", "image3"],
+            "published": ["true", "1"]
+        },
+        {
+            "name": "name 4",
+            "subdomain": "project4",
+            "category": ["painting"],
+            "subtitle": "subtitle 4",
+            "collaborators": "collaborator 4",
+            "abstract": "abstract 4",
+            "description": "description 4",
+            "images": ["image1", "image2", "image3"],
+            "published": ["true", "1"]
+        }
+    ]
+}
