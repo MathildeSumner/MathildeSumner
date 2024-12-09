@@ -42,7 +42,7 @@ header {
 }
 
 .project:hover{
-    background-color:rgb(180, 255, 165);
+    background-color:#87D8C5
 }
 
 .project{
@@ -52,7 +52,7 @@ header {
     margin-bottom: 20px;
     padding: 15px 20px;
     border-radius: 10px;
-    background-color: #6DA6B0
+    background-color: #3bb89b
 }
 
 .project img {
@@ -70,7 +70,7 @@ header {
     margin: 20px auto;
     margin: 1vh 5vw;
     border-radius: 10px;
-    background-color: #6DA6B0;
+    background-color: #3bb89b;
     
 }
 
@@ -110,13 +110,13 @@ header {
 }
 
 #buttons button:hover {
-    background-color: #262C32;
+    background-color: #4C5864;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #buttons button:focus {
-    background-color: #F8DE4F;
+    background-color: #4C5864;
 }
 
 #buttons button:active {
