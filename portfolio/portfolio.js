@@ -10,16 +10,23 @@ fetch('../portfolio/portfolio.json')
         console.log(`error ${err}`);
     })
 
-function parseData(data){
-    for(let i=0; i<data.projects.length; i++){
-    document.getElementById("projects").innerHTML += `<a href="../portfolio/${data.projects[i].subdomain}.html">
-    <div class="row project" id="${data.projects[i].subdomain}">
-        <div class="projimg"><img src="../img/unicorns/unicorn (${i +1}).png"></div>
-        <div class="description"><h2>${data.projects[i].name}</h2><p class="subtitle">${data.projects[i].subtitle}</p>
-        <p>${data.projects[i].abstract}</p></div></div></a>`;
+    function parseData(data) {
+        for (let i = 0; i < data.projects.length; i++) {
+            document.getElementById("projects").innerHTML += `
+            <a href="../portfolio/${data.projects[i].subdomain}.html">
+                <div class="row project" id="${data.projects[i].subdomain}">
+                    <div class="projimg">
+                        <img src="../portfolio/img/covers/cover (${i + 1}).png">
+                    </div>
+                    <div class="description">
+                        <h2>${data.projects[i].name}</h2>
+                        <p>${data.projects[i].abstract}</p>
+                    </div>
+                </div>
+            </a>`;
+        }
     }
-}
-
+    
 for(b of document.querySelectorAll("#buttons button")){
     b.addEventListener("click", e=>{
         console.log(e.target.value);

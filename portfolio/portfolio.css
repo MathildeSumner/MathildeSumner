@@ -7,6 +7,10 @@ p{
 h1{
     font-family: "Raleway", sans-serif;
 }
+h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+}
 
 
 /* Header Styling */
@@ -48,7 +52,7 @@ header {
 .project{
     display:flex;
     flex-direction:row;
-    margin-top:50px;
+    margin-top:20px;
     margin-bottom: 20px;
     padding: 15px 20px;
     border-radius: 10px;
