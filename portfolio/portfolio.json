@@ -1,9 +1,9 @@
 {
     "projects": [
         {
-            "name": "name 1",
+            "name": "Records",
             "subdomain": "Records",
-            "category": ["WebDesign"],
+            "category": ["DigitalDesign"],
             "subtitle": "subtitle 1",
             "collaborators": "collaborator 1",
             "abstract": "abstract 1",
@@ -12,9 +12,9 @@
   
         },
         {
-            "name": "name 2",
+            "name": "Landscape paintings",
             "subdomain": "Landscape_paintings",
-            "category": ["WebDesign"],
+            "category": ["PhysicalArt"],
             "subtitle": "subtitle 2",
             "collaborators": "collaborator 2",
             "abstract": "abstract 2",
@@ -22,9 +22,9 @@
             "images": ["image1", "image2", "image3"]
         },
         {
-            "name": "name 3",
-            "subdomain": "project3",
-            "category": ["painting"],
+            "name": "Ceramics",
+            "subdomain": "Ceramics",
+            "category": ["PhysicalArt"],
             "subtitle": "subtitle 3",
             "collaborators": "collaborator 3",
             "abstract": "abstract 3",
@@ -33,9 +33,9 @@
             "published": ["true", "1"]
         },
         {
-            "name": "name 4",
-            "subdomain": "project4",
-            "category": ["painting"],
+            "name": "Colorado Symphony Website",
+            "subdomain": "Colorado_Symphony_Website",
+            "category": ["WebDesign"],
             "subtitle": "subtitle 4",
             "collaborators": "collaborator 4",
             "abstract": "abstract 4",
