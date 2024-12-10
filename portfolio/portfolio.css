@@ -102,10 +102,24 @@ header {
 }
 
 .about-container img {
-    width: 100px; /* Default size for smaller screens */
+    width: 15%;
+    min-width: 150px;
+    max-width: 300px;
     object-fit: cover;
     border-radius: 10px;
-    transition: width 0.3s ease; /* Smooth transition when resizing */
+    transition: width 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .about-container img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-container img {
+        width: 25%;
+    }
 }
 
 
@@ -162,9 +176,6 @@ header {
         padding-top: 1;
         padding-bottom: 1;
     }
-    .about-container img {
-        width: 170px; 
-    }
 }
 
 @media (max-width: 768px) {
@@ -189,9 +200,6 @@ header {
         padding: 10px 20px;
         font-size: 1em;
     }
-    .about-container img {
-        width: 130px; 
-    }
 }
 
 @media (max-width: 480px) {
@@ -207,9 +215,6 @@ header {
     #buttons button {
         padding: 10px 20px;
         font-size: 1em;
-    }
-    .about-container img {
-        width: 100px; 
     }
 }
 
