@@ -1,5 +1,5 @@
 body {
-    background-color: #f99577;
+    background-color: #373F47;
 }
 
 p {
@@ -87,8 +87,8 @@ h2 {
     text-align: center;  
 }
 #description {
-    background-color: #373F47;
-    color: white;
+    background-color: #f99577;
+    color: black;
     border-radius: 15px; 
     padding: 30px;       
     text-align: center;  

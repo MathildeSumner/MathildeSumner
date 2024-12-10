@@ -22,13 +22,15 @@ function buildPage(project) {
 
     // Add project name and description dynamically
     document.getElementById("project").innerHTML += `<h1 id="title">${project.name}</h1>`;
-    document.getElementById("project").innerHTML += `<h2 id="description">${project.description}</h2>`;
 
     // Determine the folder path based on the project
     let folderPath = getFolderPath(project);
 
     // Build the carousel using images and captions from the project
     buildCarousel(project.images, project.alt_text, folderPath);
+
+    document.getElementById("project").innerHTML += `<h2 id="description">${project.description}</h2>`;
+
 }
 
 function getFolderPath(project) {

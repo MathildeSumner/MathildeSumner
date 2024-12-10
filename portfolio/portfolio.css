@@ -50,27 +50,27 @@ header {
 }
 
 .project {
-    display: block; /* Switch to block layout to allow float-based wrapping */
+    display: block; 
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 10px;
     background-color: #3bb89b;
-    overflow: hidden; /* Ensures content stays within the box */
+    overflow: hidden; 
 }
 
 .project img {
-    float: left; /* Makes the image float to the left */
-    width: 25vw; /* Adjust as needed for your layout */
+    float: left;
+    width: 25vw; 
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    margin-right: 20px; /* Adds space between image and text */
-    margin-bottom: 10px; /* Adds space below the image */
+    margin-right: 20px; 
+    margin-bottom: 10px; 
 }
 
 .project img {
-    width: 25vw; /* Default size for larger screens */
+    width: 25vw; 
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -78,9 +78,9 @@ header {
 }
 
 .project p {
-    word-wrap: break-word; /* Ensures text wraps properly */
-    font-size: 16px; /* Adjust font size if needed */
-    line-height: 1.5; /* Improves readability */
+    word-wrap: break-word; 
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
 
@@ -102,10 +102,10 @@ header {
 }
 
 .about-container img {
-    width: 150px; 
-    object-fit: cover; 
+    width: 100px; /* Default size for smaller screens */
+    object-fit: cover;
     border-radius: 10px;
-    
+    transition: width 0.3s ease; /* Smooth transition when resizing */
 }
 
 
@@ -162,6 +162,7 @@ header {
         padding-top: 1;
         padding-bottom: 1;
     }
+    
 }
 
 @media (max-width: 768px) {
