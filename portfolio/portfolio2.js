@@ -20,18 +20,19 @@ function findProjectInJSON(projects) {
 function buildPage(project) {
     console.log(project);
 
-    // Add project name and description 
+    // Add project name and description dynamically
     document.getElementById("project").innerHTML += `<h1>${project.name}</h1>`;
     document.getElementById("project").innerHTML += `<h2>${project.description}</h2>`;
 
     // Determine the folder path based on the project
     let folderPath = getFolderPath(project);
 
-    // Build the carousel 
+    // Build the carousel using images and captions from the project
     buildCarousel(project.images, project.alt_text, folderPath);
 }
 
 function getFolderPath(project) {
+    // Adjust the folder path based on the project type
     if (project.name.toLowerCase().includes("landscape")) {
         return 'landscapes';
     } else if (project.name.toLowerCase().includes("ceramic")) {
@@ -39,7 +40,7 @@ function getFolderPath(project) {
     } else if (project.name.toLowerCase().includes("website")) {
         return 'website';
     } else {
-        return 'records'; 
+        return 'records'; // Default folder
     }
 }
 

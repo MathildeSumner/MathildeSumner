@@ -1,26 +1,36 @@
-.thumb-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    overflow-x: auto;
-    margin-bottom: 20px;
+body {
+    background-color: #373F47; /* Dark grey background */
+    font-family: "Open Sans", sans-serif;
 }
 
-.thumb-bar img {
-    flex: 1;
-    height: auto;
-    margin: 5px;
-    max-width: 100px;
-    cursor: pointer;
-    object-fit: contain;
+#project {
+    background-color: #f99577; /* Orange background for project box */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
 }
 
-.thumb-bar img:hover {
-    opacity: 0.7;
-    transform: scale(1.1);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+#title {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    font-size: clamp(2em, 5vw, 5em);
+    font-weight: bold;
+    line-height: 1.2;
+    display: inline-block;
+    color: white;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#slideshow {
+    background-color: #3bb89b; /* Green background for the image carousel box */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .displayed-img {
@@ -30,4 +40,26 @@
     object-fit: contain;
     display: block;
     margin: 0 auto;
+    border: 4px solid white;
+    border-radius: 10px;
+
+}
+
+.thumb-bar {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.thumb-bar img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white; 
+    cursor: pointer;
+}
+
+.thumb-bar img:hover {
+    opacity: 0.7;
 }
