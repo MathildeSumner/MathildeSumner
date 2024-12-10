@@ -149,60 +149,67 @@ header {
 
 @media (min-width: 900px) {
     .project p {
-        font-size: 25px; 
+        font-size: 25px;
     }
     .project h2 {
         font-size: 30px; /* Adjust heading size */
     }
-    #about p{
+    #about p {
         font-size: 20px;
     }
-    #about h2{
+    #about h2 {
         font-size: 30px;
         padding-top: 1;
         padding-bottom: 1;
     }
-    
+    .about-container img {
+        width: 170px; 
+    }
 }
 
 @media (max-width: 768px) {
     .project img {
-        width: 45vw; /* Larger image for medium screens */
+        width: 45vw; 
     }
     .project h2 {
-        font-size: 24px; /* Smaller heading size */
+        font-size: 24px; 
     }
     .project p {
-        font-size: 15px; /* Smaller paragraph font size */
+        font-size: 15px; 
     }
-    #about p{
+    #about p {
         font-size: 12px;
     }
-    #about h2{
+    #about h2 {
         font-size: 25px;
         padding-top: 1;
         padding-bottom: 1;
     }
     #buttons button {
         padding: 10px 20px;
-        font-size: 1em; 
+        font-size: 1em;
     }
-
+    .about-container img {
+        width: 130px; 
+    }
 }
 
 @media (max-width: 480px) {
     .project img {
-        width: 70vw; /* Even larger image for smaller screens */
+        width: 70vw; 
     }
     .project h2 {
-        font-size: 20px; /* Smallest heading size */
+        font-size: 20px; 
     }
     .project p {
-        font-size: 10px; /* Smallest paragraph font size */
+        font-size: 10px; 
     }
     #buttons button {
         padding: 10px 20px;
-        font-size: 1em; 
+        font-size: 1em;
+    }
+    .about-container img {
+        width: 100px; 
     }
 }
 
